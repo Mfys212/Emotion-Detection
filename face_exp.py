@@ -4,7 +4,7 @@ from keras.models import load_model
 
 model = load_model('model.h5')
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-emotion_labels = ["Marah", "Jijik", "Takut", "Senang", "Netral", "Sedih", "Terkejut"]
+emotion_labels = ["Marah", "Jijik", "Takut", "Senang", "Netral", "Sedih", "Terkejut"] 
 
 
 def detect_and_predict_expression(image, model):
